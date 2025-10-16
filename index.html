@@ -1,129 +1,1798 @@
-<!doctype html>
-<html lang="fa" dir="rtl">
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>صفحه‌ شخصی من</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="ssss.css">
+<html lang="en" dir="rtl"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/arman.css">
+    <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
 </head>
 
+<!-- https://www.digistyle.com/ -->
+
 <body>
-    <header class="site-header">
-        <div class="container">
-            <div class="brand">
-                <h1>ارمان سلیمانلو</h1>
+<header class="arman0">
+    <div id="basket"></div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <div class="col-12 col-md-4 d-flex justify-content-start align-items-center">
+                    <a href="#">
+                        <div class="position-relative">
+                            <div>
+                                <div class="cart-container" onclick="toggleCart()">
+                                    🛒<span id="cartCount" class="cart-badge">0</span>
+                                </div>
+                                <div class="cart-box" id="cartBox">
+                                    <div id="cartItems" style="padding:10px; text-align:center; color:gray;">
+                                        سبد خرید خالی است
+                                    </div>
+                                    <div id="cartTotal" class="cart-total"></div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </a>
+                </div>
+                    <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+                        <a href="#">
+                            <img src="images/352f3537.svg" class="w-100 logo" alt="00">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex justify-content-end align-items-end">
+                        <div class="c-ui-input c-ui-input--search-main js-mega-search__trigger">
+                            <div class="ali">
+                                <div class="card ">
+                                    <button class="buy ">جستجوی محصولات از ۲۲۱۰ برند</button>
+                                </div>
+
+                                <div id="searchPage" class="search-page">
+                                    <div class="search-container">
+                                        <div class="search-top">
+                                            <input type="search" id="mainSearch" placeholder=" جستجو کنید..." autocomplete="off">
+                                            <button id="closeSearch">✖</button>
+                                        </div>
+                                        <div id="liveResults" class="live-results"></div>
+                                        <div id="searchHistory" class="search-history"></div>
+                                    </div>
+                                </div>
+
             </div>
-            <nav class="nav">
-                <a href="#about">درباره من</a>
-                <a href="#skills">کار هایی که بلدم </a>
-                <a href="#languages">زبان‌های برنامه‌نویسی</a>
-                <a href="#projects">پروژه‌های من</a>
-                <a href="#contact">تماس و ایمیل</a>
-            </nav>
+            </div>
+            </div>
+            </div>
+        </nav>
+        <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+  <div class="container-fluid">
+<li class="nav-item dropdown mega-dropdown">
+  <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    لباس زنانه
+  </a>
+  <div class="dropdown-menu mega-menu p-4" aria-labelledby="navbarDropdown">
+    <div class="row">
+      
+      <!-- ستون ۱ -->
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">خرید لباس زنانه</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">تیشرت و پولوشرت</a></li>
+          <li><a href="#">شلوار و شلوارک</a></li>
+          <li><a href="#">لباس راحتی</a></li>
+          <li><a href="#">پیراهن</a></li>
+        </ul>
+      </div>
+
+      <!-- ستون ۲ -->
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">لباس بالا تنه</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">بلوز و شومیز</a></li>
+          <li><a href="#">ژاکت و پلیور</a></li>
+          <li><a href="#">هودی و سویشرت</a></li>
+        </ul>
+      </div>
+
+      <!-- ستون ۳ -->
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">لباس پایین تنه</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">دامن</a></li>
+          <li><a href="#">شلوار جین</a></li>
+          <li><a href="#">لِگ</a></li>
+        </ul>
+      </div>
+
+      <!-- ستون ۴ (برندها) -->
+      <div class="col-md-3 text-center">
+        <h6 class="fw-bold mb-3">برترین برندهای لباس زنانه</h6>
+        <div class="row g-2">
+          <div class="col-6"><img src="brand1.jpg" class="img-fluid rounded"></div>
+          <div class="col-6"><img src="brand2.jpg" class="img-fluid rounded"></div>
+          <div class="col-6"><img src="brand3.jpg" class="img-fluid rounded"></div>
+          <div class="col-6"><img src="brand4.jpg" class="img-fluid rounded"></div>
         </div>
+        <a href="#" class="d-block mt-2 small text-muted">مشاهده همه برندها</a>
+      </div>
+     <a class="navbar-brand  text-danger" href="#">حراج استایل</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     <a class="navbar-brand text-black" href="#">خانه ساعت</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     <a class="navbar-brand text-black" href="#">خانه طلا</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+
+    </button></div>
+  </div>
+</li>
+    
+
+    </div>
+  <div class="container-fluid">
+<li class="nav-item dropdown mega-dropdown">
+  <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    لباس زنانه
+  </a>
+  <div class="dropdown-menu mega-menu p-4" aria-labelledby="navbarDropdown">
+    <div class="row">
+      
+      <!-- ستون ۱ -->
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">خرید لباس زنانه</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">تیشرت و پولوشرت</a></li>
+          <li><a href="#">شلوار و شلوارک</a></li>
+          <li><a href="#">لباس راحتی</a></li>
+          <li><a href="#">پیراهن</a></li>
+        </ul>
+      </div>
+
+      <!-- ستون ۲ -->
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">لباس بالا تنه</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">بلوز و شومیز</a></li>
+          <li><a href="#">ژاکت و پلیور</a></li>
+          <li><a href="#">هودی و سویشرت</a></li>
+        </ul>
+      </div>
+
+      <!-- ستون ۳ -->
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">لباس پایین تنه</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">دامن</a></li>
+          <li><a href="#">شلوار جین</a></li>
+          <li><a href="#">لِگ</a></li>
+        </ul>
+      </div>
+
+      <!-- ستون ۴ (برندها) -->
+      <div class="col-md-3 text-center">
+        <h6 class="fw-bold mb-3">برترین برندهای لباس زنانه</h6>
+        <div class="row g-2">
+          <div class="col-6"><img src="" class="img-fluid rounded"></div>
+          <div class="col-6"><img src="" class="img-fluid rounded"></div>
+          <div class="col-6"><img src="" class="img-fluid rounded"></div>
+          <div class="col-6"><img src="" class="img-fluid rounded"></div>
+        </div>
+        <a href="#" class="d-block mt-2 small text-muted">مشاهده همه برندها</a>
+      </div>
+     <a class="navbar-brand  text-danger" href="#">حراج استایل</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     <a class="navbar-brand text-black" href="#">خانه ساعت</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     <a class="navbar-brand text-black" href="#">خانه طلا</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+
+    </button></div>
+  </div>
+</li>
+    
+
+    </div>
+  <div class="container-fluid">
+<li class="nav-item dropdown mega-dropdown">
+  <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    لباس زنانه
+  </a>
+  <div class="dropdown-menu mega-menu p-4" aria-labelledby="navbarDropdown">
+    <div class="row">
+      
+      <!-- ستون ۱ -->
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">خرید لباس زنانه</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">تیشرت و پولوشرت</a></li>
+          <li><a href="#">شلوار و شلوارک</a></li>
+          <li><a href="#">لباس راحتی</a></li>
+          <li><a href="#">پیراهن</a></li>
+        </ul>
+      </div>
+
+      <!-- ستون ۲ -->
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">لباس بالا تنه</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">بلوز و شومیز</a></li>
+          <li><a href="#">ژاکت و پلیور</a></li>
+          <li><a href="#">هودی و سویشرت</a></li>
+        </ul>
+      </div>
+
+      <!-- ستون ۳ -->
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">لباس پایین تنه</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">دامن</a></li>
+          <li><a href="#">شلوار جین</a></li>
+          <li><a href="#">لِگ</a></li>
+        </ul>
+      </div>
+
+      <!-- ستون ۴ (برندها) -->
+      <div class="col-md-3 text-center">
+        <h6 class="fw-bold mb-3">برترین برندهای لباس زنانه</h6>
+        <div class="row g-2">
+          <div class="col-6"><img src="brand1.jpg" class="img-fluid rounded"></div>
+          <div class="col-6"><img src="brand2.jpg" class="img-fluid rounded"></div>
+          <div class="col-6"><img src="brand3.jpg" class="img-fluid rounded"></div>
+          <div class="col-6"><img src="brand4.jpg" class="img-fluid rounded"></div>
+        </div>
+        <a href="#" class="d-block mt-2 small text-muted">مشاهده همه برندها</a>
+      </div>
+     <a class="navbar-brand  text-danger" href="#">حراج استایل</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     <a class="navbar-brand text-black" href="#">خانه ساعت</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     <a class="navbar-brand text-black" href="#">خانه طلا</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+
+    </button></div>
+  </div>
+</li>
+    
+
+    </div>
+  <div class="container-fluid">
+<li class="nav-item dropdown mega-dropdown">
+  <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    لباس زنانه
+  </a>
+  <div class="dropdown-menu mega-menu p-4" aria-labelledby="navbarDropdown">
+    <div class="row">
+      
+      <!-- ستون ۱ -->
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">خرید لباس زنانه</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">تیشرت و پولوشرت</a></li>
+          <li><a href="#">شلوار و شلوارک</a></li>
+          <li><a href="#">لباس راحتی</a></li>
+          <li><a href="#">پیراهن</a></li>
+        </ul>
+      </div>
+
+      <!-- ستون ۲ -->
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">لباس بالا تنه</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">بلوز و شومیز</a></li>
+          <li><a href="#">ژاکت و پلیور</a></li>
+          <li><a href="#">هودی و سویشرت</a></li>
+        </ul>
+      </div>
+
+      <!-- ستون ۳ -->
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">لباس پایین تنه</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">دامن</a></li>
+          <li><a href="#">شلوار جین</a></li>
+          <li><a href="#">لِگ</a></li>
+        </ul>
+      </div>
+
+      <!-- ستون ۴ (برندها) -->
+      <div class="col-md-3 text-center">
+        <h6 class="fw-bold mb-3">برترین برندهای لباس زنانه</h6>
+        <div class="row g-2">
+          <div class="col-6"><img src="brand1.jpg" class="img-fluid rounded"></div>
+          <div class="col-6"><img src="brand2.jpg" class="img-fluid rounded"></div>
+          <div class="col-6"><img src="brand3.jpg" class="img-fluid rounded"></div>
+          <div class="col-6"><img src="brand4.jpg" class="img-fluid rounded"></div>
+        </div>
+        <a href="#" class="d-block mt-2 small text-muted">مشاهده همه برندها</a>
+      </div>
+     <a class="navbar-brand  text-danger" href="#">حراج استایل</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     <a class="navbar-brand text-black" href="#">خانه ساعت</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     <a class="navbar-brand text-black" href="#">خانه طلا</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+
+    </button></div>
+  </div>
+</li>
+    
+
+    </div>
+  <div class="container-fluid">
+<li class="nav-item dropdown mega-dropdown">
+  <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    لباس زنانه
+  </a>
+  <div class="dropdown-menu mega-menu p-4" aria-labelledby="navbarDropdown">
+    <div class="row">
+      
+      <!-- ستون ۱ -->
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">خرید لباس زنانه</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">تیشرت و پولوشرت</a></li>
+          <li><a href="#">شلوار و شلوارک</a></li>
+          <li><a href="#">لباس راحتی</a></li>
+          <li><a href="#">پیراهن</a></li>
+        </ul>
+      </div>
+
+      <!-- ستون ۲ -->
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">لباس بالا تنه</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">بلوز و شومیز</a></li>
+          <li><a href="#">ژاکت و پلیور</a></li>
+          <li><a href="#">هودی و سویشرت</a></li>
+        </ul>
+      </div>
+
+      <!-- ستون ۳ -->
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">لباس پایین تنه</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">دامن</a></li>
+          <li><a href="#">شلوار جین</a></li>
+          <li><a href="#">لِگ</a></li>
+        </ul>
+      </div>
+
+      <!-- ستون ۴ (برندها) -->
+      <div class="col-md-3 text-center">
+        <h6 class="fw-bold mb-3">برترین برندهای لباس زنانه</h6>
+        <div class="row g-2">
+          <div class="col-6"><img src="brand1.jpg" class="img-fluid rounded"></div>
+          <div class="col-6"><img src="brand2.jpg" class="img-fluid rounded"></div>
+          <div class="col-6"><img src="brand3.jpg" class="img-fluid rounded"></div>
+          <div class="col-6"><img src="brand4.jpg" class="img-fluid rounded"></div>
+        </div>
+        <a href="#" class="d-block mt-2 small text-muted">مشاهده همه برندها</a>
+      </div>
+     <a class="navbar-brand  text-danger" href="#">حراج استایل</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     <a class="navbar-brand text-black" href="#">خانه ساعت</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     <a class="navbar-brand text-black" href="#">خانه طلا</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+
+    </button></div>
+  </div>
+</li>
+    
+
+    </div>
+  <div class="container-fluid">
+<li class="nav-item dropdown mega-dropdown">
+  <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    لباس زنانه
+  </a>
+  <div class="dropdown-menu mega-menu p-4" aria-labelledby="navbarDropdown">
+    <div class="row">
+      
+      <!-- ستون ۱ -->
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">خرید لباس زنانه</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">تیشرت و پولوشرت</a></li>
+          <li><a href="#">شلوار و شلوارک</a></li>
+          <li><a href="#">لباس راحتی</a></li>
+          <li><a href="#">پیراهن</a></li>
+        </ul>
+      </div>
+
+      <!-- ستون ۲ -->
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">لباس بالا تنه</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">بلوز و شومیز</a></li>
+          <li><a href="#">ژاکت و پلیور</a></li>
+          <li><a href="#">هودی و سویشرت</a></li>
+        </ul>
+      </div>
+
+      <!-- ستون ۳ -->
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">لباس پایین تنه</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">دامن</a></li>
+          <li><a href="#">شلوار جین</a></li>
+          <li><a href="#">لِگ</a></li>
+        </ul>
+      </div>
+
+      <!-- ستون ۴ (برندها) -->
+      <div class="col-md-3 text-center">
+        <h6 class="fw-bold mb-3">برترین برندهای لباس زنانه</h6>
+        <div class="row g-2">
+          <div class="col-6"><img src="brand1.jpg" class="img-fluid rounded"></div>
+          <div class="col-6"><img src="brand2.jpg" class="img-fluid rounded"></div>
+          <div class="col-6"><img src="brand3.jpg" class="img-fluid rounded"></div>
+          <div class="col-6"><img src="brand4.jpg" class="img-fluid rounded"></div>
+        </div>
+        <a href="#" class="d-block mt-2 small text-muted">مشاهده همه برندها</a>
+      </div>
+     <a class="navbar-brand  text-danger" href="#">حراج استایل</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     <a class="navbar-brand text-black" href="#">خانه ساعت</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     <a class="navbar-brand text-black" href="#">خانه طلا</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+
+    </button></div>
+  </div>
+</li>
+    
+
+    </div>
+        <nav class="navbar navbar-expand-lg popo ">
+  <div class="container-fluid">
+    <a class="navbar-brand text-danger" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+  <div class="container-fluid">
+<li class="nav-item dropdown mega-dropdown">
+  <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    لباس زنانه
+  </a>
+  <div class="dropdown-menu mega-menu p-4" aria-labelledby="navbarDropdown">
+    <div class="row">
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">خرید لباس زنانه</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">تیشرت و پولوشرت</a></li>
+          <li><a href="#">شلوار و شلوارک</a></li>
+          <li><a href="#">لباس راحتی</a></li>
+          <li><a href="#">پیراهن</a></li>
+        </ul>
+      </div>
+   
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">لباس بالا تنه</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">بلوز و شومیز</a></li>
+          <li><a href="#">ژاکت و پلیور</a></li>
+          <li><a href="#">هودی و سویشرت</a></li>
+        </ul>
+      </div>
+  
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">لباس پایین تنه</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">دامن</a></li>
+          <li><a href="#">شلوار جین</a></li>
+          <li><a href="#">لِگ</a></li>
+        </ul>
+      </div> 
+
+      <div class="col-md-3 text-center">
+        <h6 class="fw-bold mb-3">برترین برندهای لباس زنانه</h6>
+        <div class="row g-2">
+          <div class="col-6"><img src="brand1.jpg" class="img-fluid rounded"></div>
+          <div class="col-6"><img src="brand2.jpg" class="img-fluid rounded"></div>
+          <div class="col-6"><img src="brand3.jpg" class="img-fluid rounded"></div>
+          <div class="col-6"><img src="brand4.jpg" class="img-fluid rounded"></div>
+        </div>
+        <a href="#" class="d-block mt-2 small text-muted">مشاهده همه برندها</a>
+      </div>
+     <a class="navbar-brand  text-danger" href="#">حراج استایل</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     <a class="navbar-brand text-black" href="#">خانه ساعت</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     <a class="navbar-brand text-black" href="#">خانه طلا</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+
+    </button></div>
+  </div>
+</li>
+    
+
+    </div>
+  </nav></div>
+
+
     </header>
 
+  <div class="my-digi-swiper swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/1.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="images/2.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="images/3.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="images/4.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="images/5.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="images/6.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="images/8.jpg" alt=""></div>
+    </div>
+    
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- دکمه‌ها -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
     <main>
-        <section id="about" class="section hero">
-            <div class="container">
-                <h2 class="typewriter" id="typewriter"></h2>
-                <p class="intro">علاقه‌مند به طراحی مدرن و ساخت سایت‌های واکنش‌گرا با کارایی بالا.</p>
+
+        <section class="bg-body-tertiary">
+
+            <nav>
+                <ul class="d-flex justify-content-center align-items-center">
+                    <li class="list-style-none">
+                        <button data-bind="one" class="actions border-0 bg-body-tertiary px-5 cp-tab__anchor">
+                            مردانه
+                        </button>
+                    </li>
+                    <li class="list-style-none">
+                        <button data-bind="two" class="actions border-0 bg-body-tertiary px-5  cp-tab__anchor">
+                            زنانه
+                        </button>
+                    </li>
+                    <li class="list-style-none">
+                        <button data-bind="three" class="actions border-0 bg-body-tertiary px-5 cp-tab__anchor">
+                            بچگانه
+                        </button>
+                    </li>
+                    <li class="list-style-none">
+                        <button data-bind="four" class="actions border-0 bg-body-tertiary px-5 cp-tab__anchor">
+                            زیبایی و سلامت
+                        </button>
+                    </li>
+                </ul>
+                <hr>
+            </nav>
+            <div id="showable">
+                <div id="one" class="khas active">
+                    <div class="bg-img-7 position-relative">
+                        <div class="btn btn-light rounded-0 position-absolute top-90 start-0">
+                            لباس مردانه
+                        </div>
+                    </div>
+                    <div class="row py-5">
+                        <div class="col-12 col-md-4">
+                            <div class="position-relative bg-img-8">
+                                <div class="btn btn-light rounded-0 position-absolute top-90 start-0">
+                                    مراقبت پوست
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="position-relative bg-img-9">
+                                <div class="btn btn-light rounded-0 position-absolute top-90 start-0">
+                                    لوازم بهداشتی
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="position-relative bg-img-10">
+                                <div class="btn btn-light rounded-0 position-absolute top-90 start-0">
+                                    لوازم شخصی برقی
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="two" class="khas">
+                    <div class="bg-img-11 position-relative">
+                        <div class="btn btn-light rounded-0 position-absolute top-90 start-0">
+                            لوازم آرایشی
+                        </div>
+                    </div>
+                    <div class="row py-5">
+                        <div class="col-12 col-md-4">
+                            <div class="position-relative bg-img-12">
+                                <div class="btn btn-light rounded-0 position-absolute top-90 start-0">
+                                    مراقبت پوست
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="position-relative bg-img-13">
+                                <div class="btn btn-light rounded-0 position-absolute top-90 start-0">
+                                    لوازم بهداشتی
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="position-relative bg-img-14">
+                                <div class="btn btn-light rounded-0 position-absolute top-90 start-0">
+                                    لوازم شخصی برقی
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="three" class="khas">
+                    <div class="container">
+                        <div class="bg-img-15 position-relative">
+                            <div class="btn btn-light rounded-0 position-absolute top-90 start-0">
+                                لوازم آرایشی
+                            </div>
+                        </div>
+                        <div class="row py-5">
+                            <div class="col-12 col-md-6">
+                                <div class="position-relative bg-img-16">
+                                    <div class="btn btn-light rounded-0 position-absolute top-90 start-0">
+                                        مراقبت پوست
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="position-relative bg-img-17">
+                                    <div class="btn btn-light rounded-0 position-absolute top-90 start-0">
+                                        لوازم بهداشتی
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="four" class="khas">
+                    <div class="bg-img-1 position-relative">
+                        <div class="btn btn-light rounded-0 position-absolute top-90 start-0">
+                            لوازم آرایشی
+                        </div>
+                    </div>
+                    <div class="d-flex py-5">
+                        <div class="position-relative bg-img-2">
+                            <div class="btn btn-light rounded-0 position-absolute top-90 start-0">
+                                مراقبت پوست
+                            </div>
+                        </div>
+                        <div class="position-relative bg-img-3">
+                            <div class="btn btn-light rounded-0 position-absolute top-90 start-0">
+                                لوازم بهداشتی
+                            </div>
+                        </div>
+                        <div class="position-relative bg-img-4">
+                            <div class="btn btn-light rounded-0 position-absolute top-90 start-0">
+                                لوازم شخصی برقی
+                            </div>
+                        </div>
+                        <div class="position-relative bg-img-5">
+                            <div class="btn btn-light rounded-0 position-absolute top-90 start-0">
+                                عطر و ادکلن
+                            </div>
+                        </div>
+                        <div class="position-relative bg-img-6">
+                            <div class="btn btn-light rounded-0 position-absolute top-90 start-0">
+                                ابزار سلامت
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
         </section>
-        <h2 class="section-title">چیزهایی که بلدم</h2>
-
-        <div class="skill">
-            <span>زبان انگلیسی</span>
-            <div class="skill-bar">
-                <div class="skill-fill" style="width: 60%"></div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <span>تکواندو</span>
-            <div class="skill-bar">
-                <div class="skill-fill" style="width: 80%"></div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <span>فنی ماشین </span>
-            <div class="skill-bar">
-                <div class="skill-fill" style="width: 60%"></div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <span>برنامه نویسی</span>
-            <div class="skill-bar">
-                <div class="skill-fill" style="width: 70%"></div>
-            </div>
-        </div>
-
-        <section id="languages" class="section">
+        <section class="py-5">
             <div class="container">
-                <h2 class="section-title">زبان‌های برنامه‌نویس که بلدمی</h2>
-                <div class="chips">
-                    <span class="chip">HTML</span>
-                    <span class="chip">CSS</span>
-                    <span class="chip">JavaScript</span>
+                <div class="row">
+                    <div class="col-12 col-md-2">
+                        <h3>
+                            پرفـــروش
+                            <br>
+                            تریـن‌های
+                            <br>
+                            اخــیــــــــر
+                        </h3>
+                        <button class="border-1 px-3 py-2 brn">مشاهده همه</button>
+
+                    </div>
+                    <div class="col-12 col-md-10">
+                        <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-rtl swiper-backface-hidden">
+                            <div class="swiper-wrapper" id="swiper-wrapper-8544d1039da61e6c7" aria-live="polite">
+                                <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 6" style="width: 273px; ">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        </a><div class="card w-1 position-relative border-0 border-0"><a href="#" class="text-decoration-none text-dark">
+                                            <div class="bg-img-18">
+                                                <div class="top-0 position-absolute bg-light p-2">بولون</div>
+                                            </div>
+                                            </a><div class="card-body border-0"><a href="#" class="text-decoration-none text-dark">
+                                                <p class="card-text">ساعت مچی دیجیتال اسکمی مدل 1426</p>
+                                                </a><a href="#" class="font-family-ali btn btn-primary">تومان</a>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                                <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 6" style="width: 273px; ">
+                                    <div class="product">
+                                        <a href="#" class="text-decoration-none text-dark">
+                                            <div class="card w-1 position-relative border-0">
+                                                <div class="bg-img-18">
+                                                    <img src="images/4118466.jpg" alt="">
+                                                    <div class="top-0 position-absolute bg-light p-2">
+                                                        <h3>بولون</h3>
+                                                    </div>
+
+                                                    <p>99999</p>
+
+
+                                                </div>
+                                                <h6 class="card-text">ساعت مچی دیجیتال اسکمی مدل 1426</h6>
+                                                <div class="product-price">
+
+                                                    <span class="old-price ">۱۲۹,۰۰۰</span> ۹۹,۹۰۰ تومان
+                                                </div>
+                                                <button onclick="addToCart(this)">افزودن به سبد</button>
+                                            </div>
+                                    </a></div><a href="#" class="text-decoration-none text-dark">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide" role="group" aria-label="3 / 6" style="width: 273px; ">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        </a><div class="card w-1 position-relative border-0"><a href="#" class="text-decoration-none text-dark">
+                                            <div class="bg-img-18">
+                                                <div class="top-0 position-absolute bg-light p-2">بولون</div>
+                                                <div class="top-57 right-89 position-absolute bg-dark p-2 text-light">
+                                                    25%</div>
+                                            </div>
+                                            </a><div class="card-body border-0"><a href="#" class="text-decoration-none text-dark">
+                                                <p class="card-text">ساعت مچی دیجیتال اسکمی مدل 1426</p>
+                                                </a><a href="#" class="font-family-ali btn btn-primary">تومان</a>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                                <div class="swiper-slide" role="group" aria-label="4 / 6" style="width: 273px; ">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        </a><div class="card w-1 position-relative border-0"><a href="#" class="text-decoration-none text-dark">
+                                            <div class="bg-img-18">
+                                                <div class="top-0 position-absolute bg-light p-2">بولون</div>
+                                            </div>
+                                            </a><div class="card-body border-0"><a href="#" class="text-decoration-none text-dark">
+                                                <p class="card-text">ساعت مچی دیجیتال اسکمی مدل 1426</p>
+                                                </a><a href="#" class="font-family-ali btn btn-primary">تومان</a>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                                <div class="swiper-slide" role="group" aria-label="5 / 6" style="width: 273px; ">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        </a><div class="card w-1 position-relative border-0"><a href="#" class="text-decoration-none text-dark">
+                                            <div class="bg-img-18">
+                                                <div class="top-0 position-absolute bg-light p-2">بولون</div>
+                                                <div class="top-57 right-89 position-absolute bg-dark p-2 text-light">
+                                                    25%</div>
+                                            </div>
+                                            </a><div class="card-body border-0"><a href="#" class="text-decoration-none text-dark">
+                                                <p class="card-text">ساعت مچی دیجیتال اسکمی مدل 1426</p>
+                                                </a><a href="#" class="font-family-ali btn btn-primary">تومان</a>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                                <div class="swiper-slide" role="group" aria-label="6 / 6" style="width: 273px; ">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        </a><div class="card w-1 position-relative border-0"><a href="#" class="text-decoration-none text-dark">
+                                            <div class="bg-img-18">
+                                                <div class="top-0 position-absolute bg-light p-2">بولون</div>
+                                            </div>
+                                            </a><div class="card-body border-0"><a href="#" class="text-decoration-none text-dark">
+                                                <p class="card-text">ساعت مچی دیجیتال اسکمی مدل 1426</p>
+                                                </a><a href="#" class="font-family-ali btn btn-primary">تومان</a>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-8544d1039da61e6c7" aria-disabled="false"><svg class="swiper-navigation-icon" width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.38296 20.0762C0.111788 19.805 0.111788 19.3654 0.38296 19.0942L9.19758 10.2796L0.38296 1.46497C0.111788 1.19379 0.111788 0.754138 0.38296 0.482966C0.654131 0.211794 1.09379 0.211794 1.36496 0.482966L10.4341 9.55214C10.8359 9.9539 10.8359 10.6053 10.4341 11.007L1.36496 20.0762C1.09379 20.3474 0.654131 20.3474 0.38296 20.0762Z" fill="currentColor"></path></svg></div>
+                            <div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-8544d1039da61e6c7" aria-disabled="true"><svg class="swiper-navigation-icon" width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.38296 20.0762C0.111788 19.805 0.111788 19.3654 0.38296 19.0942L9.19758 10.2796L0.38296 1.46497C0.111788 1.19379 0.111788 0.754138 0.38296 0.482966C0.654131 0.211794 1.09379 0.211794 1.36496 0.482966L10.4341 9.55214C10.8359 9.9539 10.8359 10.6053 10.4341 11.007L1.36496 20.0762C1.09379 20.3474 0.654131 20.3474 0.38296 20.0762Z" fill="currentColor"></path></svg></div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section>
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center py-3">
+                    <div>
+                        <h3>محــبوبــــ‌ترینــ بــرنــدها</h3>
+                    </div>
+                    <div>
+                        <a href="#" class="text-decoration-none text-dark">
+                            مشاهده همه برندها
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"></path>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="ads">
+                    <div class="asd"></div>
+                    <div class="row roww py-5">
+                        <div class="col-12 col-md-3">
+                            <div class="w-50 m-auto">
+                                <img src="images/ad.png" class="w-100" alt="00">
+                            </div>
+                            <div class="m-auto">
+                                <a href="#" class="text-decoration-none text-dark d-flex justify-content-center align-items-center py-2">
+                                    مشاهده همه محصولات
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"></path>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="card w-2">
+                                <div class="overflow-hidden">
+                                    <div class="bg-img-24">
+                                        <div class="btn bg-light rounded-0">سواروسکی</div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" class="card-text text-decoration-none text-dark">گردنبند نقره زنانه
+                                        سواروسکی مدل مکعب کد 1</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="card w-2">
+                                <div class="overflow-hidden">
+                                    <div class="bg-img-25">
+                                        <div class="btn bg-light rounded-0">سواروسکی</div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" class="card-text text-decoration-none text-dark">گوشواره نقره زنانه
+                                        سواروسکی مدل قلب و قو کد 997946...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="card w-2">
+                                <div class="overflow-hidden">
+                                    <div class="bg-img-26">
+                                        <div class="btn bg-light rounded-0">سواروسکی</div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" class="card-text text-decoration-none text-dark">نیم ست نقره زنانه
+                                        سواروسکی مدل پروانه اوپال کد 465...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <section id="projects" class="section alt">
-            <div class="container">
-                <h2 class="section-title">پروژه‌های من</h2>
-                <div class="projects-grid">
-                    <div class="project">
-                        <h3>پروژه اول</h3>
-                        <div class="projects-header">
-                            <h2 class="section-title">پروژه‌های من</h2>
-                            <a href="#projects" class="btn-projects">نمایش پروژه‌ها</a>
+        <section>
+            <div class="container py-5">
+                <div class="ads">
+                    <div class="asd"></div>
+                    <div class="row roww py-5">
+                        <div class="col-12 col-md-3">
+                            <div class="card w-2">
+                                <div class="overflow-hidden">
+                                    <div class="bg-img-27">
+                                        <div class="btn rounded-0">لیپو</div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" class="card-text text-decoration-none text-dark">گردنبند نقره زنانه
+                                        سواروسکی مدل مکعب کد 1</a>
+                                </div>
+                            </div>
                         </div>
-
-                    </div>
-                    <div class="project">
-                        <h3>پروژه دوم</h3>
-
-                        <div class="projects-header">
-                            <h2 class="section-title">پروژه‌های من</h2>
-                            <a href="#projects" class="btn-projects">نمایش پروژه‌ها</a>
+                        <div class="col-12 col-md-3">
+                            <div class="card w-2">
+                                <div class="overflow-hidden">
+                                    <div class="bg-img-28">
+                                        <div class="btn rounded-0">لیپو</div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" class="card-text text-decoration-none text-dark">گوشواره نقره زنانه
+                                        سواروسکی مدل قلب و قو کد 997946...</a>
+                                </div>
+                            </div>
                         </div>
-
-                    </div>
-                    <div class="project">
-                        <h3>پروژه سوم</h3>
-                        <div class="projects-header">
-                            <h2 class="section-title">پروژه‌های من</h2>
-                            <a href="#projects" class="btn-projects">نمایش پروژه‌ها</a>
+                        <div class="col-12 col-md-3">
+                            <div class="card w-2">
+                                <div class="overflow-hidden">
+                                    <div class="bg-img-29">
+                                        <div class="btn rounded-0">لیپو</div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" class="card-text text-decoration-none text-dark">نیم ست نقره زنانه
+                                        سواروسکی مدل پروانه اوپال کد 465...</a>
+                                </div>
+                            </div>
                         </div>
-
+                        <div class="col-12 col-md-3">
+                            <div class="w-25 m-auto">
+                                <img src="images/ws.jpg" class="w-100" alt="00">
+                            </div>
+                            <div class="m-auto">
+                                <a href="#" class="text-decoration-none text-dark d-flex justify-content-center align-items-center py-5">
+                                    مشاهده همه محصولات
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"></path>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section id="contact" class="section">
+        <section>
             <div class="container">
-                <h2 class="section-title">تماس با من</h2>
-                <p>ایمیل: <a href="mailto:you@example.com">armansoleimanloo@gmail.com</a></p>
-                <p>شماره تلفن: <a href="tel:+989123456789">09366342123</a></p>
+                <div class="row">
+                    <div class="col-12 col-md-2">
+                        <h3 class="px-auto">
+                            جــــــدیــد
+                            <br>
+                            تریـن‌های
+                            <br>
+                            اخــیــــــــر
+                        </h3>
+                        <button class="border-1 top-90 brn py-2 px-3">مشاهده همه</button>
+                    </div>
+                    <div class="col-12 col-md-10">
+                        <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-rtl">
+                            <div class="swiper-wrapper" id="swiper-wrapper-bc075774f103d2b101" aria-live="polite">
+                                <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 12" style="width: 273px;  padding: 30px;">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        </a><div class="card w-1 position-relative border-0 border-0"><a href="#" class="text-decoration-none text-dark">
+                                            <div class="bg-img-39">
+                                                <div class="top-0 position-absolute bg-light p-2">ali</div>
+                                            </div>
+                                            </a><div class="card-body border-0"><a href="#" class="text-decoration-none text-dark">
+                                                <p class="card-text">ساعت مچی دیجیتال اسکمی مدل 1426</p>
+                                                </a><a href="#" class="font-family-ali btn btn-primary">تومان</a>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                                <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 12" style="width: 273px;  padding: 30px;">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        </a><div class="card w-1 position-relative border-0 border-0"><a href="#" class="text-decoration-none text-dark">
+                                            <div class="bg-img-40">
+                                                <div class="top-0 position-absolute bg-light p-2">ali</div>
+                                            </div>
+                                            </a><div class="card-body border-0"><a href="#" class="text-decoration-none text-dark">
+                                                <p class="card-text">ساعت مچی دیجیتال اسکمی مدل 1426</p>
+                                                </a><a href="#" class="font-family-ali btn btn-primary">تومان</a>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                                <div class="swiper-slide" role="group" aria-label="3 / 12" style="width: 273px;  padding: 30px;">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        </a><div class="card w-1 position-relative border-0 border-0"><a href="#" class="text-decoration-none text-dark">
+                                            <div class="bg-img-41">
+                                                <div class="top-0 position-absolute bg-light p-2">ali</div>
+                                            </div>
+                                            </a><div class="card-body border-0"><a href="#" class="text-decoration-none text-dark">
+                                                <p class="card-text">ساعت مچی دیجیتال اسکمی مدل 1426</p>
+                                                </a><a href="#" class="font-family-ali btn btn-primary">تومان</a>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                                <div class="swiper-slide" role="group" aria-label="4 / 12" style="width: 273px; padding: 30px;">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        </a><div class="card w-1 position-relative border-0 border-0"><a href="#" class="text-decoration-none text-dark">
+                                            <div class="bg-img-30">
+                                                <div class="top-0 position-absolute bg-light p-2">ali</div>
+                                            </div>
+                                            </a><div class="card-body border-0"><a href="#" class="text-decoration-none text-dark">
+                                                <p class="card-text">ساعت مچی دیجیتال اسکمی مدل 1426</p>
+                                                </a><a href="#" class="font-family-ali btn btn-primary">تومان</a>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                                <div class="swiper-slide" role="group" aria-label="5 / 12" style="width: 273px;  padding: 30px;">
+                                    <a href="#" class="text-decoration-none text-dark"> padding
+                                        </a><div class="card w-1 position-relative border-0"><a href="#" class="text-decoration-none text-dark">
+                                            <div class="bg-img-31">
+                                                <div class="top-0 position-absolute bg-light p-2">ali</div>
+                                            </div>
+                                            </a><div class="card-body border-0"><a href="#" class="text-decoration-none text-dark">
+                                                <p class="card-text">ساعت مچی دیجیتال اسکمی مدل 1426</p>
+                                                </a><a href="#" class="font-family-ali btn btn-primary">تومان</a>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                                <div class="swiper-slide" role="group" aria-label="6 / 12" style="width: 273px;  padding: 30px;">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        </a><div class="card w-1 position-relative border-0"><a href="#" class="text-decoration-none text-dark">
+                                            <div class="bg-img-32">
+                                                <div class="top-0 position-absolute bg-light p-2">ali</div>
+                                                <div class="top-57 right-89 position-absolute bg-dark p-2 text-light">
+                                                    25%</div>
+                                            </div>
+                                            </a><div class="card-body border-0"><a href="#" class="text-decoration-none text-dark">
+                                                <p class="card-text">ساعت مچی دیجیتال اسکمی مدل 1426</p>
+                                                </a><a href="#" class="font-family-ali btn btn-primary">تومان</a>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                                <div class="swiper-slide" role="group" aria-label="7 / 12" style="width: 273px;  padding: 30px;">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        </a><div class="card w-1 position-relative border-0"><a href="#" class="text-decoration-none text-dark">
+                                            <div class="bg-img-33">
+                                                <div class="top-0 position-absolute bg-light p-2">ali</div>
+                                            </div>
+                                            </a><div class="card-body border-0"><a href="#" class="text-decoration-none text-dark">
+                                                <p class="card-text">ساعت مچی دیجیتال اسکمی مدل 1426</p>
+                                                </a><a href="#" class="font-family-ali btn btn-primary">تومان</a>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                                <div class="swiper-slide" role="group" aria-label="8 / 12" style="width: 273px;  padding: 30px;">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        </a><div class="card w-1 position-relative border-0"><a href="#" class="text-decoration-none text-dark">
+                                            <div class="bg-img-34">
+                                                <div class="top-0 position-absolute bg-light p-2">ali</div>
+                                                <div class="top-57 right-89 position-absolute bg-dark p-2 text-light">
+                                                    25%</div>
+                                            </div>
+                                            </a><div class="card-body border-0"><a href="#" class="text-decoration-none text-dark">
+                                                <p class="card-text">ساعت مچی دیجیتال اسکمی مدل 1426</p>
+                                                </a><a href="#" class="font-family-ali btn btn-primary">تومان</a>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                                <div class="swiper-slide" role="group" aria-label="9 / 12" style="width: 273px;  padding: 30px;">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        </a><div class="card w-1 position-relative border-0"><a href="#" class="text-decoration-none text-dark">
+                                            <div class="bg-img-35">
+                                                <div class="top-0 position-absolute bg-light p-2">ali</div>
+                                            </div>
+                                            </a><div class="card-body border-0"><a href="#" class="text-decoration-none text-dark">
+                                                <p class="card-text">ساعت مچی دیجیتال اسکمی مدل 1426</p>
+                                                </a><a href="#" class="font-family-ali btn btn-primary">تومان</a>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                                <div class="swiper-slide" role="group" aria-label="10 / 12" style="width: 273px;  padding: 30px;">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        </a><div class="card w-1 position-relative border-0"><a href="#" class="text-decoration-none text-dark">
+                                            <div class="bg-img-36">
+                                                <div class="top-0 position-absolute bg-light p-2">ali</div>
+                                            </div>
+                                            </a><div class="card-body border-0"><a href="#" class="text-decoration-none text-dark">
+                                                <p class="card-text">ساعت مچی دیجیتال اسکمی مدل 1426</p>
+                                                </a><a href="#" class="font-family-ali btn btn-primary">تومان</a>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                                <div class="swiper-slide" role="group" aria-label="11 / 12" style="width: 273px;  padding: 30px;">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        </a><div class="card w-1 position-relative border-0"><a href="#" class="text-decoration-none text-dark">
+                                            <div class="bg-img-37">
+                                                <div class="top-0 position-absolute bg-light p-2">ali</div>
+                                            </div>
+                                            </a><div class="card-body border-0"><a href="#" class="text-decoration-none text-dark">
+                                                <p class="card-text">ساعت مچی دیجیتال اسکمی مدل 1426</p>
+                                                </a><a href="#" class="font-family-ali btn btn-primary">تومان</a>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                                <div class="swiper-slide" role="group" aria-label="12 / 12" style="width: 273px; padding: 30px;">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        </a><div class="card w-1 position-relative border-0"><a href="#" class="text-decoration-none text-dark">
+                                            <div class="bg-img-38">
+                                                <div class="top-0 position-absolute bg-light p-2">ali</div>
+                                            </div>
+                                            </a><div class="card-body border-0"><a href="#" class="text-decoration-none text-dark">
+                                                <p class="card-text">ساعت مچی دیجیتال اسکمی مدل 1426</p>
+                                                </a><a href="#" class="font-family-ali btn btn-primary">تومان</a>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-bc075774f103d2b101" aria-disabled="false"><svg class="swiper-navigation-icon" width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.38296 20.0762C0.111788 19.805 0.111788 19.3654 0.38296 19.0942L9.19758 10.2796L0.38296 1.46497C0.111788 1.19379 0.111788 0.754138 0.38296 0.482966C0.654131 0.211794 1.09379 0.211794 1.36496 0.482966L10.4341 9.55214C10.8359 9.9539 10.8359 10.6053 10.4341 11.007L1.36496 20.0762C1.09379 20.3474 0.654131 20.3474 0.38296 20.0762Z" fill="currentColor"></path></svg></div>
+                            <div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-bc075774f103d2b101" aria-disabled="true"><svg class="swiper-navigation-icon" width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.38296 20.0762C0.111788 19.805 0.111788 19.3654 0.38296 19.0942L9.19758 10.2796L0.38296 1.46497C0.111788 1.19379 0.111788 0.754138 0.38296 0.482966C0.654131 0.211794 1.09379 0.211794 1.36496 0.482966L10.4341 9.55214C10.8359 9.9539 10.8359 10.6053 10.4341 11.007L1.36496 20.0762C1.09379 20.3474 0.654131 20.3474 0.38296 20.0762Z" fill="currentColor"></path></svg></div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section>
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h3>
+                            طـــراحانــ ایــــرانـی
+                        </h3>
+                    </div>
+                    <div class="d-flex">
+                        <a href="#" class="d-flex text-decoration-none text-dark justify-content-between">
+                            <p>
+                                مشاهده خانه طراحان ایرانی
+                            </p>
+                        </a>
+                        <a href="#" class="d-flex text-decoration-none text-dark justify-content-between px-2 py-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="row py-5">
+                    <div class="col-12 col-md-4">
+                        <a href="#" class="text-decoration-none text-dark">
+                            <h4>
+                                ان سی نو
+                            </h4>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <h5 class="text-body-secondary">
+                                دالاوین
+                            </h5>
+                        </a>
+                        <a href="#" class="text-decoration-none text-Secondary">
+                            <h4 class="text-body-secondary">
+                                ریس
+                            </h4>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-8 container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-md-8">
+                                <a href="#">
+                                    <img src="images/a1.jpg" class="w-100" alt="00">
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4 d-flex align-items-center">
+                                <a href="#">
+                                    <img src="images/a3.jpg" class="w-100" alt="00">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <div class="card position-relative border-0">
+                                    <img src="images/qx.jpg" class="w-100 card-img-top" alt="...">
+                                    <div class="btn btn-dark text-light top-100 right-89 position-absolute rounded-0 p-2">
+                                        72%</div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card position-relative border-0">
+                                    <img src="images/aq.jpg" class="w-100 card-img-top" alt="...">
+                                    <div class="btn btn-dark text-light top-100 right-89 position-absolute rounded-0 p-2">
+                                        51%</div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card position-relative border-0">
+                                    <img src="images/pq.jpg" class="w-100 card-img-top" alt="...">
+                                    <div class="btn btn-dark text-light top-100 right-89 position-absolute rounded-0 p-2">
+                                        72%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div></section>
+        <section class="py-5">
+            <div class="py-5 container">
+                <h3>آخرین مطالب بلاگ دیجی‌استایل</h3>
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <a class="text-decoration-none" href="#">
+                            <div class="border-h p-3">
+                                <img src="images/ta.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="card-title py-3">هر آنچه که باید درباره تاریخچه‌ی برند پرادا بدانید</h6>
+                                    <p class="card-text font">وقتی صحبت از مد لوکس ایتالیایی می‌شود، نام پرادا همیشه به
+                                        ذهن افراد
+                                        می‌رسد. پرادا با نوآوری و ابهام مترادف</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <a class="text-decoration-none" href="#">
+                            <div class="border-h p-3">
+                                <img src="images/tb.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="card-title py-3">انواع کفش جیر را چگونه باید تمیز کنیم؟</h6>
+                                    <p class="card-text font">چگونه کفش‌ جیر را تمیز کنیم؟ کفش‌های جیر در تمام طول سال
+                                        مورد‌استفاده قرار می‌گیرند. در تابستان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <a class="text-decoration-none" href="#">
+                            <div class="border-h p-3">
+                                <img src="images/tc.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="card-title py-3">چگونه کفش کتانی کانورس را در استایل خود ست کنیم؟</h6>
+                                    <p class="card-text font">با وجود اینکه برندهای مختلفی از کفش‌های کتانی وجود دارد
+                                        اما یک برند
+                                        بالاتر از همه ایستاده است و آن برند</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <a class="text-decoration-none" href="#">
+                            <div class="border-h p-3">
+                                <img src="images/td.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="card-title py-3">بررسی کیف دستی زنانه اسپیور؛ طراحی شیک اما نه خیلی دقیق
+                                    </h6>
+                                    <p class="card-text font">یکی از اکسسوری‌های پرکاربرد در استایل زنانه، کیف دستی است.
+                                        کیف‌ها
+                                        در عین اینکه جذابیت بیشتری به استایل ما</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="py-4 container">
+                <a href="#">
+                    <img src="images/wi.jpg" class="w-100" alt="00">
+                </a>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-3">
+                            <ul class="list-style-none">
+                                <li>
+                                    <a href="#">
+                                        <h5>
+                                            مردانه
+                                        </h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration">
+                                        <p>
+                                            لباس مردانه
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration">
+                                        <p>
+                                            کفش مردانه
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration">
+                                        <p>
+                                            اکسسوری مردانه
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration">
+                                        <p>
+                                            ورزشی مردانه
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <ul class="list-style-none">
+                                <li>
+                                    <a href="#">
+                                        <h5>
+                                            زنانه
+                                        </h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration">
+                                        <p>
+                                            لباس زنانه
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration">
+                                        <p>
+                                            کفش زنانه
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration">
+                                        <p>
+                                            اکسسوری زنانه
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration">
+                                        <p>
+                                            ورزشی زنانه
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <ul class="list-style-none">
+                                <li>
+                                    <a href="#">
+                                        <h5>
+                                            بچگانه
+                                        </h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration">
+                                        <p>
+                                            نوزاد
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration">
+                                        <p>
+                                            دخترانه
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration">
+                                        <p>
+                                            پسرانه
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <ul class="list-style-none">
+                                <li>
+                                    <a href="#">
+                                        <h5>
+                                            زیبایی و سلامت
+                                        </h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration">
+                                        <p>
+                                            لوازم آرایشی
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration">
+                                        <p>
+                                            لوازم آرایشی
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration">
+                                        <p>
+                                            لوازم بهداشتی
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration">
+                                        <p>
+                                            لوازم شخصی برقی
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration">
+                                        <p>
+                                            عطر و ادکلن
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration">
+                                        <p>
+                                            ابزار سلامت
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="d-flex w-100 p-3 flex-wrap justify-content-center">
+                            <a href="#" class="w-3">
+                                <img src="images/aa.svg" alt="00" class="w-100">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="d-flex justify-content-center">
+                                <h5>تحویل سریع و آسان</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="d-flex w-100 p-3 flex-wrap justify-content-center">
+                            <a href="#" class="w-3">
+                                <img src="images/ab.svg" alt="00" class="w-100">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="d-flex justify-content-center">
+                                <h5>۱۴ روز ضمانت بازگشت کالا</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="d-flex w-100 p-3 flex-wrap justify-content-center">
+                            <a href="#" class="w-3">
+                                <img src="images/ac.svg" alt="00" class="w-100">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="d-flex justify-content-center">
+                                <h5>ضمانت اصل بودن کالا</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-
-    <footer class="site-footer">
+    <footer>
         <div class="container">
-            <p> ساخته‌شده با ❤️ توسط آرمان سلیمانلو </p>
+            <div class="d-flex justify-content-center align-items-center">
+                <img src="images/352f3537.svg" class="w-100" alt="00">
+                <span class="for-logo"></span>
+            </div>
+            <div class="row">
+                <div class="col-1 col-md-4">
+                    <ul>
+                        <li>
+                            خرید
+                        </li>
+                        <li>
+                            <a href="#">
+                                زنانه
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                مردانه
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                بچگانه
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                زیبایی و سلامت
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                ورزش و سفر
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                کارت هدیه
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-2">
+                    <ul>
+                        <li>
+                            خدمات مشتریان
+                        </li>
+                        <li>
+                            <a href="#">
+                                پاسخ به پرسش‌های متداول
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                رویه‌های بازگرداندن کالا
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                شرایط استفاده
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                حریم خصوصی
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-2">
+                    <ul>
+                        <li>
+                            اطلاعات دیجی‌استایل
+                        </li>
+                        <li>
+                            <a href="#">
+                                درباره دیجی‌استایل
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                تماس با دیجی‌استایل
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                همکاری با دیجی‌استایل
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                    <ul class="d-flex justify-content-between">
+                        <li>
+                            <a href="#">
+                                <p>تلفن پشتیبانی: ۶۱۹۳۰۳۰۰-۰۲۱</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="border-1">
+                                <div class="btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up" viewBox="0 0 16 16">
+                                        <path d="M3.204 11h9.592L8 5.519zm-.753-.659 4.796-5.48a1 1 0 0 1 1.506 0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 0 1-.753-1.659"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <a href="#" class="d-flex justify-content-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a href="#" class="d-flex justify-content-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a href="#" class="d-flex justify-content-end">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h6>ثبت‌نام در خبرنامه دیجی‌استایل</h6>
+                        </div>
+                        <div>
+                            <input type="text" class="rounded-0 border-1 py-6">
+                            <div class="btn btn-secondary rounded-0 m-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left text-dark" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="co-12 col-md-6">
+                    <a href="#">
+                        دانلود اپلیکیشن دیجی‌استایل
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-3">
+                            <a href="#">
+                                <img src="images/aa.png" class="w-100" alt="00">
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <a href="#">
+                                <img src="images/ab.png" class="w-100" alt="00">
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <a href="#">
+                                <img src="images/ac.png" class="w-100" alt="00">
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <a href="#">
+                                <img src="images/ae.png" class="w-100" alt="00">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12 col-md-7">
+                    <h6>
+                        فروشگاه اینترنتی مد و لباس دیجی‌استایل
+                    </h6>
+                    <div id="text-container">
+                        <p id="paragraph1"> دیجی‌استایل، پس از تجربه‌ی موفق فروشگاه اینترنتی دیجی‌کالا به صورت تخصصی پا
+                            به عرصه مد، پوشاک و
+                            سبک زندگی گذاشت تا همان تجربه‌ی شیرین، در قالبی نو تکرار شود. در دیجی ‌استایل می‌توانید همه
+                            آنچه
+                            مرتبط با مد و پوشاک از انواع لباس زنانه، لباس مردانه و لباس بچگانه گرفته تا کیف و کفش و
+                            اکسسوری
+                            را با تخفیف ویژه در حراج ها، پیدا کنید و به سادگی یک ست کامل از جدیدترین‌ برندهای معتبر را
+                            بخرید.</p>
+                        <p id="paragraph2"> در دیجی استایل برندهای ایرانی مشهوری نظیر چرم مشهد، درسا، کفش ملی، کفش شیما،
+                            شیفر، چرم کروکو،
+                            مارال چرم، بادی اسپینر، ال سی من، پاتن جامه، تن درست، زیبو، زی، کیکی رایکی، نیکتا و ...
+                            برندهای
+                            خارجی نظیر دیور (Dior)، آلدو (Aldo)، آندر آرمور (Under Armour)، نایکی (Nike)، اسکچرز
+                            (Skechers)،
+                            ریباک (Reebok)، سالامون (Salomon)، ری بن (Rey Ban)، ال سی وایکیکی (LC Waikiki)، پوما (Puma)،
+                            دنیلی (Daniellee) و... موجود است و می توانید جدیدترین محصولات این برندها رو به صورت آنلاین
+                            تهیه
+                            کنید و به راحتی درب منزل تحویل بگیرید.
+                            <br>
+                            <br>
+                            همچنان دیجی استایل با ورود به دنیای زیبایی و سلامت انواع عطر و ادکلن، لوازم آرایش چشم و
+                            ابرو،
+                            آرایش صورت، لوازم شخصی برقی، بهداشت و زیبایی ناخن، ابزار سلامت و ... را در اختیار مشتریان
+                            قرار
+                            داده تا بتوانند از محصولات اورجینال و اصل خریداری کنند و در صورت مغایرت کالا تا 14 روز امکان
+                            بازگشت کالا را وجود دارد. پس همین حالا برای خرید انواع رنگ مو، سشوار، پنکیک، ماسک صورت، خط
+                            چشم،
+                            لاک ناخن، ادکلن، کانسیلر، شامپو، سایه ابرو و سایه چشم به فروشگاه اینترنتی دیجی استایل مراجعه
+                            کنید و تنها با چند کلیک محصول مورد نظر خود را سفارش دهید.
+                        </p>
+                    </div>
+
+                    <button id="show-more" class="btn">نمایش بیشتر</button>
+                    <button id="show-less" class="btn">نمایش کمتر</button>
+                </div>
+                <div class="col-12 col-md-5 d-flex justify-content-center">
+                    <div class="c-new-footer__trust-symbol">
+                        <a href="#">
+                            <img src="images/re.png" alt="00" class="w-100">
+                        </a>
+                    </div>
+                    <div class="c-new-footer__trust-symbol">
+                        <a href="#">
+                            <img src="images/ra.png" alt="00" class="w-100">
+                        </a>
+                    </div>
+                    <div class="c-new-footer__trust-symbol">
+                        <a href="#">
+                            <img src="images/rb.png" alt="00" class="w-100">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between">
+                <div>
+                    <p>
+                        کليه حقوق اين سايت متعلق به شرکت نوآوران فن آوازه (فروشگاه اینترنتی دیجی‌استایل) می‌باشد.
+                    </p>
+                </div>
+                <div>
+                    digistyle.com - 2025 © Copyright
+                </div>
+            </div>
         </div>
     </footer>
-    <script src="aaaaa.js"></script>
-    <script src="sssss.js"></script>
-</body>
 
-</html>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/oooo.js"></script>
+    <script src="js/aaaa.js"></script>
+    <script src="js/sss.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swip.js"></script>
+    <script src="js/swip2.js"></script>
+    <script src="js/aarman.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+<script src="js/swiper3.js"></script>
+<script src="js/swiper4.js"></script>
+
+
+</body></html>
